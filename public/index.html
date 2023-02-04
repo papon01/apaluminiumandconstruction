@@ -9,6 +9,9 @@
         <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="Material/AP LOGO 2.png">
 
+        <!-- Link to Google OAuth2.0 API file -->
+            <script src="https://apis.google.com/js/api.js"></script>
+
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -80,15 +83,10 @@
                                     <nav> 
                                         <ul id="navigation">                                                                                                                   
                                             <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="#about">About</a></li>
                                             <li><a href="project.html">Projects</a></li>
                                             <li><a href="services.html">Services</a></li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
+                                            
                                             <li><a href="#">Pages</a>
                                                 <ul class="submenu">
                                                     <li><a href="elements.html">Element</a></li>
@@ -103,7 +101,7 @@
                             </div>             
                             <div class="col-xl-2 col-lg-2 col-md-3">
                                 <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="#" class="btn">Contact Now</a>
+                                    <a id="signInOutButton" onclick="signInOut()" class="btn">Log In</a>
                                 </div>
                             </div>
                             <!-- Mobile Menu -->
@@ -229,9 +227,9 @@
         </div>
         <!-- Services Area End -->
         <!-- About Area Start -->
-        <section class="support-company-area fix pt-10">
-            <div class="support-wrapper align-items-end">
-                <div class="left-content">
+        <section  class="support-company-area fix pt-10">
+            <div  class="support-wrapper align-items-end">
+                <div id="about"class="left-content">
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
@@ -1072,5 +1070,8 @@
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
         
+        <!-- My own JS -->	
+        <script src="./assets/js/loginout.js"></script>
+
     </body>
 </html>
